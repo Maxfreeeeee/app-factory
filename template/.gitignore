@@ -1,0 +1,22 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+
+# Secrets — never tracked. .env.example is the tracked template.
+.env
+.env.local
+.env.*.local
+supabase/functions/.env
+credentials.json
+credentials/*
+!credentials/.gitkeep
+*.p8
+*.p12
+*.pem
+*.mobileprovision
+
+.DS_Store
+ios/
+android/

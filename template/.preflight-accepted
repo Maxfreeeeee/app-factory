@@ -1,0 +1,6 @@
+# Risks accepted for this app, one "ID  reason" per line. Mirrors the "◇ accepted
+# risk" notation in the security audit. An entry here turns a blocking finding into
+# a documented decision — so write a real reason, not "later".
+#
+# Example:
+# M1  by design: client writes its own tracking data, no cross-user leak

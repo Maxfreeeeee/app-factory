@@ -1,0 +1,13 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/assets/*": ["./assets/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
+  "// exclude": "supabase/functions is Deno, not React Native. It has its own globals and .ts import specifiers; the app's tsc cannot read it. The Supabase CLI type-checks it on deploy.",
+  "exclude": ["node_modules", "supabase"]
+}

@@ -1,0 +1,18 @@
+project_id = "__APP_SLUG__"
+
+[auth]
+enabled = true
+site_url = "__SCHEME__://"
+additional_redirect_urls = ["__SCHEME__://update-password", "__SCHEME__://"]
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+# Open signup with unverified email is the enabling condition for account-farming
+# abuse (audit finding C3). Keep this true here AND in the hosted dashboard —
+# the hosted project does not read this file.
+enable_signup = true
+minimum_password_length = 8
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+double_confirm_changes = true

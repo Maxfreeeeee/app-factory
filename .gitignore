@@ -1,0 +1,21 @@
+node_modules/
+*.log
+.DS_Store
+
+# Secrets — this repo handles App Store Connect keys and Supabase credentials
+# through scripts/, so a stray key at the root would otherwise be committed
+# silently. The template ships its own copy of these rules for scaffolded apps.
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.pem
+*.mobileprovision
+credentials/*
+!credentials/.gitkeep
+.appstoreconnect/
+
+# Niche verdicts are answers, not method. /app-scan writes them here;
+# they stay on the machine that produced them.
+scans/
